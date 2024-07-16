@@ -7,20 +7,17 @@ const bookSchema = mongoose.Schema(
             required: true,
         },
         author: {
-            type: String,
+            type: [String],
             required: true,
         },
         publishYear: {
             type: Number,
             required: true,
         },
-    },
+    }, 
     {
         timestamps: true
     }
 )
 
-
-
-
-export const Book = mongoose.model('Cat', bookSchema);
+export const Book = mongoose.model('Book', bookSchema, 'books');
