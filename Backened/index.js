@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 
 //implementing cors for middlewares
-app.use(cors())                 
+app.use(cors())
 
 //the above is default cors example meaning like app.use(cors(*)) everyone with any origin nethods and allowed-headers can access it
 
